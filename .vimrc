@@ -7,8 +7,7 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 set nowrap        " don't wrap lines
-"set tabstop=40     " a tab is four spaces
-"set tabstop=2 shiftwidth=2 expandtab
+set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
@@ -21,8 +20,6 @@ set ignorecase    " ignore case when searching
 set smartcase     " ignore case if search pattern is all lowercase,
                   "    case-sensitive otherwise
 set expandtab     " replaces tabs with spaces 
-set list!
-set listchars=tab:»·,trail:·
 
 "set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
